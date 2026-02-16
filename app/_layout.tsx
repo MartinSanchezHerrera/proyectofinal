@@ -55,7 +55,7 @@ console.log(isLoggedIn);
     try {
       const session = await AsyncStorage.getItem('userSession');
       if (session) {
-        const userData = JSON.parse(session);
+        const  = JSON.parse(session);
         setIsLoggedIn(true);
       }
     } catch (error) {
