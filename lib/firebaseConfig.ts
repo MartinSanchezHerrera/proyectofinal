@@ -19,7 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // Configurar autenticación
-let auth: Auth;
+const auth: Auth;
 if (Platform.OS === 'web') {
   auth = getAuth(app);
 } else {
@@ -44,3 +44,4 @@ auth.onAuthStateChanged(async (user: any) => {
 });
 
 export { auth, db };
+
